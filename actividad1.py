@@ -24,7 +24,7 @@ correct_answers_index = [1, 2, 0, 3, 1]
 puntaje = 0
 question_data = list(zip(questions, answers, correct_answers_index))
 
-questions_to_ask = random.choices(question_data, k=3)
+questions_to_ask = random.sample(question_data, k=3)
 
 for question, possible_answers, correct_answers_index in questions_to_ask:
     # Se muestra la pregunta y las respuestas posibles
